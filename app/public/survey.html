@@ -1,3 +1,5 @@
+<!DOCTYPE html>
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <title>FriendFinder</title>
@@ -177,13 +179,11 @@
 
 
 <script type="text/javascript">
-	$(document).ready(function(){
-		// $(".card").hide()
-		// $(".container").show()
-	})
+	// $(document).ready(function(){
+	
+	// })
 	$("#userSubmitAnswers").on("click", function(event){
 			event.preventDefault();
-
 
 			var userSurveyInput = {
 				name: $("#name").val().trim(),
@@ -198,19 +198,21 @@
 						$("#answer7").val().trim(),
 						$("#answer8").val().trim(),
 						$("#answer9").val().trim(),
-						$("#answer10").val().trim(),
+						$("#answer10").val().trim()
 						]
 			};
 
-			$.post("/api/friends", userSurveyInput)
-			.done(function(data){
+			console.log(userSurveyInput)
+
+			$.post("/api/friends", userSurveyInput, function(data){
+				console.log(data)
 				
 				//Import friendArray name
-				$("#friendNameMatch").text(data.friendNameMatch)
+				$("#friendNameMatch").html(data.friendNameMatch)
+				
+
+				//Import friendArray picture
 				$("#friendPictureMatch").attr("src", data.friendPictureMatch)
-
-				//Import friendArray nicture
-
 
 				//Show friend match in modal
 				$("#modalBFF").modal('show')
@@ -225,6 +227,8 @@
 
 
 </body>
+
+</html>
 
 
 
