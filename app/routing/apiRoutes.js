@@ -30,8 +30,6 @@ module.exports = function(app){
 		for(i = 0; i < friendsArray.length; i++){
 			totalDifference = 0;
 			
-			//this show undefined
-			console.log(userSurveyAnswers)
 
 			//Look at differnces and find absolute value from the scores
 		  for(n = 0; n < userSurveyAnswers.length; n++){
