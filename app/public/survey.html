@@ -1,0 +1,247 @@
+<head>
+  <meta charset="UTF-8">
+  <title>FriendFinder</title>
+
+  <!-- Latest compiled and minified CSS & JS -->
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+
+ <script src="https://code.jquery.com/jquery.js"></script>
+ <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+	<div class="container">
+		<h2>Survey Questions</h2>
+		<hr class="my-4">
+		<h4>About You</h4>
+		<form>
+			<div class="form-group">
+				<label for="name">Name (Required)</label>
+				<input type="yourName" class="form-control" id="name" aria-describedby="nameHelp" placeholder="First Name">
+			</div>
+			
+			<div class="form-group">
+				<label for="userPic">Link to Photo Image (Required)</label>
+				<input type="picture" class="form-control" id="userPic" placeholder="">
+				<hr class="my-4">
+			</div>
+	
+			<div class="form-group">
+				<h4>Question 1 </h4>
+				<label for="question1">Your mind is always buzzing with unexplored ideas and plans.</label>
+				<select class="form-control" id="answer1">
+					<option>1 (Strongly Disagree)</option>
+					<option>2</option>
+					<option>3</option>
+					<option>4</option>
+					<option>5 (Strongly Agree)</option>
+				</select>
+			</div>
+
+			<div class="form-group">
+				<h4>Question 2 </h4>
+				<label for="question2">Generally speaking, you rely more on your experience than your imagination.</label>
+				<select class="form-control" id="answer2">
+					<option>1 (Strongly Disagree)</option>
+					<option>2</option>
+					<option>3</option>
+					<option>4</option>
+					<option>5 (Strongly Agree)</option>
+				</select>
+			</div>
+
+			<div class="form-group">
+				<h4>Question 3 </h4>
+				<label for="question3">You find it easy to stay relaxed and focused even when there is some pressure.</label>
+				<select class="form-control" id="answer3">
+					<option>1 (Strongly Disagree)</option>
+					<option>2</option>
+					<option>3</option>
+					<option>4</option>
+					<option>5 (Strongly Agree)</option>
+				</select>
+			</div>
+
+			<div class="form-group">
+				<h4>Question 4 </h4>
+				<label for="question4">You rarely do something just out of sheer curiosity.</label>
+				<select class="form-control" id="answer4">
+					<option>1 (Strongly Disagree)</option>
+					<option>2</option>
+					<option>3</option>
+					<option>4</option>
+					<option>5 (Strongly Agree)</option>
+				</select>
+			</div>
+
+			<div class="form-group">
+				<h4>Question 5 </h4>
+				<label for="question5">People can rarely upset you.</label>
+				<select class="form-control" id="answer5">
+					<option>1 (Strongly Disagree)</option>
+					<option>2</option>
+					<option>3</option>
+					<option>4</option>
+					<option>5 (Strongly Agree)</option>
+				</select>
+			</div>
+
+			<div class="form-group">
+				<h4>Question 6 </h4>
+				<label for="question6">It is often difficult for you to relate to other people's feelings.</label>
+				<select class="form-control" id="answer6">
+					<option>1 (Strongly Disagree)</option>
+					<option>2</option>
+					<option>3</option>
+					<option>4</option>
+					<option>5 (Strongly Agree)</option>
+				</select>
+			</div>
+
+			<div class="form-group">
+				<h4>Question 7 </h4>
+				<label for="question7">In a discussion, truth should be more important than people's sensitivities.</label>
+				<select class="form-control" id="answer7">
+					<option>1 (Strongly Disagree)</option>
+					<option>2</option>
+					<option>3</option>
+					<option>4</option>
+					<option>5 (Strongly Agree)</option>
+				</select>
+			</div>
+
+			<div class="form-group">
+				<h4>Question 8 </h4>
+				<label for="question8">You rarely get carried away by fantasies and ideas.</label>
+				<select class="form-control" id="answer8">
+					<option>1 (Strongly Disagree)</option>
+					<option>2</option>
+					<option>3</option>
+					<option>4</option>
+					<option>5 (Strongly Agree)</option>
+				</select>
+			</div>
+
+			<div class="form-group">
+				<h4>Question 9 </h4>
+				<label for="question9">You think that everyone's views should be respected regardless of whether they are supported by facts or not.</label>
+				<select class="form-control" id="answer9">
+					<option>1 (Strongly Disagree)</option>
+					<option>2</option>
+					<option>3</option>
+					<option>4</option>
+					<option>5 (Strongly Agree)</option>
+				</select>
+			</div>
+
+			<div class="form-group">
+				<h4>Question 10 </h4>
+				<label for="question10">You feel more energetic after spending time with a group of people.</label>
+				<select class="form-control" id="answer10">
+					<option>1 (Strongly Disagree)</option>
+					<option>2</option>
+					<option>3</option>
+					<option>4</option>
+					<option>5 (Strongly Agree)</option>
+				</select>
+			</div>
+		
+			<button type="submit" class="btn btn-primary" id="userSubmitAnswers" data-toggle="modal">Submit</button>
+		</form>
+	</div>	
+
+<!-- New BFF popup Window -->
+	<div class="modal fade bd-example-modal-lg" id="modalBFF" tabindex="-1" role="dialog">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 class="modal-title" id="newBFF">Your New BFF!</h3>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <h4 class="matchName" id="friendNameMatch"></h4>
+        <img class="matchPic" id="friendPictureMatch" src=""  height="400" width="350">
+      </div>
+      <div class="modal-footer">
+        <a href="/" class="btn btn-info">Goodbye New BFF</a>
+      </div>
+    </div>
+  </div>
+</div>
+	
+
+
+<script type="text/javascript">
+	$(document).ready(function(){
+		// $(".card").hide()
+		// $(".container").show()
+	})
+	$("#userSubmitAnswers").on("click", function(event){
+			event.preventDefault();
+
+
+			var userSurveyInput = {
+				name: $("#name").val().trim(),
+				photo: $("#userPic").val().trim(),
+				scores: [
+						$("#answer1").val().trim(),
+						$("#answer2").val().trim(),
+						$("#answer3").val().trim(),
+						$("#answer4").val().trim(),
+						$("#answer5").val().trim(),
+						$("#answer6").val().trim(),
+						$("#answer7").val().trim(),
+						$("#answer8").val().trim(),
+						$("#answer9").val().trim(),
+						$("#answer10").val().trim(),
+						]
+			};
+
+			$.post("/api/friends", userSurveyInput)
+			.done(function(data){
+				
+				//Import friendArray name
+				$("#friendNameMatch").text(data.friendNameMatch)
+				$("#friendPictureMatch").attr("src", data.friendPictureMatch)
+
+				//Import friendArray nicture
+
+
+				//Show friend match in modal
+				$("#modalBFF").modal('show')
+
+
+			})
+
+	});
+
+</script>
+
+
+
+</body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
